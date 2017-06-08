@@ -1,0 +1,32 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" name="create">
+    <div style="padding-top: 15px;">
+        <div class="span11">
+            <input name="name" class="input-block-level" type="text" placeholder="Nome do Agente" style="border-width: 0px; height: 45px;">
+        </div>
+        <button type="submit" class="btn btn-info" style="margin-left: 15px;">Salvar</button>
+    </div>
+
+    <hr>
+    <div>
+        <h5>Descrição</h5>
+        <input id="description" name="description" class="input-block-level" type="text" placeholder="Descreva o Agente" style="border-width: 0px; height: 45px;">
+    </div>
+
+    <div style="margin-top: 15px;">
+        <h5>Adicionar dado</h5>
+        <select id="samples" name="samples" class="input-block-level" style="border-width: 0px; height: 35px;">
+            {% for value in range(6) %}
+            {% if value == 0 %}
+            <option selected value="empty">Selecione algum dado de amostra para ser carregado no novo agente ou deixe em branco para agente vazio</option>
+            {% else %}
+            <option value="{{value}}">{{value}}</option>
+            {% endif %}
+            {% endfor %}
+        </select>
+    </div>
+</form>
+{% endblock %}
