@@ -14,8 +14,21 @@
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url(/static/fonts/Roboto-Regular.ttf);
+        }
+        a:hover {
+            text-decoration: none; !important;
+        }
+        ul>li {
+            font-size: 17px;
+        }
+    </style>
 </head>
-<body style="background-color: #DCE0DF; min-height: 100vh;">
+<body style="background-color: #DCE0DF; min-height: 100vh; font-family: Roboto, sans-serif;">
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span2">
@@ -34,7 +47,7 @@
                         </div>
                     </a>
                 </li>
-                <li style="margin-top: 10px;">
+                <li style="margin-top: 15px;">
                     <a href="/entity/create" style="color: black;">
                         <em><span class="fa-li fa fa-plus"></span></em>
                         <div class="list-item">
@@ -42,7 +55,7 @@
                         </div>
                     </a>
                 </li>
-                <li style="margin-top: 10px;">
+                <li style="margin-top: 15px;">
                     <a href="/intent/create" style="color: black;">
                         <em><span class="fa-li fa fa-plus"></span></em>
                         <div class="list-item">
