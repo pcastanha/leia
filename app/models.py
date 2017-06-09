@@ -12,11 +12,19 @@ class User(db.Model):
 
 
 class Post(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
+    id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
     def __repr__(self):
         return '<Post %r>' % self.body
+
+
+class Agent(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(140))
+    description = db.Column(db.String(250))
+    #data = db.Column(db.Integer, db.ForeignKey('entity.id'))
+
 

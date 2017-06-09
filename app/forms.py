@@ -9,6 +9,6 @@ class LoginForm(FlaskForm):
 
 
 class CreateAgentForm(FlaskForm):
-    agent_name = StringField('name', validators=[DataRequired()])
-    agent_description = StringField('description')
-    agent_sample_data = SelectField('samples', choices=[])
+    name = StringField('name', validators=[DataRequired()])
+    description = StringField('description')
+    samples = StringField('samples')

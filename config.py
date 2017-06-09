@@ -1,6 +1,6 @@
 import os
 
-WTF_CSRF_ENABLED = True
+WTF_CSRF_ENABLED = False
 SECRET_KEY = 'you-will-never-guess'
 basedir = os.path.abspath(os.path.dirname(__file__))
 

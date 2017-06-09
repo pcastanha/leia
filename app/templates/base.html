@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style type="css">
-        .list-item:hover {
-            background-color: #EF92A5;
-        }
-    </style>
-
     {% if title %}
     <title>{{ title }} - microblog</title>
     {% else %}
@@ -21,19 +15,19 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color: #DCE0DF; min-height: 100vh;">
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span2">
-            <div>
-                <a href="/index">
-                    <img src="/static/img/aol.png"/>
+            <div style="height: 100px; text-align: center;">
+                <a href="/index" style="position: relative; top: 7%;">
+                    <img src="/static/img/logo-final.svg"/>
                 </a>
             </div>
             <hr>
             <ul class="fa-ul">
                     <li>
-                        <a href="/create">
+                        <a href="agent/create" style="color: black;">
                             <em><span class="fa-li fa fa-plus"></span></em>
                             <div class="list-item">
                                 <span class="text-center" style="position: relative; bottom: 3px;">Create</span>
@@ -42,7 +36,7 @@
                     </li>
             </ul>
         </div>
-        <div class="span8">
+        <div class="span8" style="background-color: white; min-height: 100vh; padding-left: 30px; padding-right: 30px;">
             <!--<div style="height: 30px;">
                 AI: <a href="/index">Home</a>
             </div>
